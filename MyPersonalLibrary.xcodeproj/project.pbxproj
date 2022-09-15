@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		F205BA7728CA1C8B003D4C2E /* MyPersonalLibraryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F205BA7628CA1C8B003D4C2E /* MyPersonalLibraryApp.swift */; };
-		F205BA7928CA1C8B003D4C2E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F205BA7828CA1C8B003D4C2E /* ContentView.swift */; };
+		F205BA7928CA1C8B003D4C2E /* MyLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F205BA7828CA1C8B003D4C2E /* MyLibraryView.swift */; };
 		F205BA7B28CA1C8D003D4C2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F205BA7A28CA1C8D003D4C2E /* Assets.xcassets */; };
 		F205BA7E28CA1C8D003D4C2E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F205BA7D28CA1C8D003D4C2E /* Preview Assets.xcassets */; };
 		F205BA8828CA1C8D003D4C2E /* MyPersonalLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F205BA8728CA1C8D003D4C2E /* MyPersonalLibraryTests.swift */; };
 		F205BA9228CA1C8D003D4C2E /* MyPersonalLibraryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F205BA9128CA1C8D003D4C2E /* MyPersonalLibraryUITests.swift */; };
 		F205BA9428CA1C8D003D4C2E /* MyPersonalLibraryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F205BA9328CA1C8D003D4C2E /* MyPersonalLibraryUITestsLaunchTests.swift */; };
+		F205BAA228CA1E5E003D4C2E /* LibraryFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F205BAA128CA1E5E003D4C2E /* LibraryFeature.swift */; };
+		F205BAA528CA1EA4003D4C2E /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = F205BAA428CA1EA4003D4C2E /* ComposableArchitecture */; };
+		F205BAA728CA1EE4003D4C2E /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = F205BAA628CA1EE4003D4C2E /* Book.swift */; };
+		F205BAAA28CA21C3003D4C2E /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F205BAA928CA21C3003D4C2E /* APIError.swift */; };
+		F205BAAC28CA228C003D4C2E /* SystemEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F205BAAB28CA228C003D4C2E /* SystemEnvironment.swift */; };
+		F205BAAE28CA3473003D4C2E /* LibraryEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = F205BAAD28CA3473003D4C2E /* LibraryEffects.swift */; };
+		F212E88328D34CBA0051E0C8 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F212E88228D34CBA0051E0C8 /* RootView.swift */; };
+		F212E88528D34CE10051E0C8 /* RootFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F212E88428D34CE10051E0C8 /* RootFeature.swift */; };
+		F212E88928D367A50051E0C8 /* Bookshelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = F212E88828D367A50051E0C8 /* Bookshelf.swift */; };
+		F212E88B28D367C80051E0C8 /* OpenLibrarySearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F212E88A28D367C80051E0C8 /* OpenLibrarySearchResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +46,7 @@
 /* Begin PBXFileReference section */
 		F205BA7328CA1C8B003D4C2E /* MyPersonalLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPersonalLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F205BA7628CA1C8B003D4C2E /* MyPersonalLibraryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPersonalLibraryApp.swift; sourceTree = "<group>"; };
-		F205BA7828CA1C8B003D4C2E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F205BA7828CA1C8B003D4C2E /* MyLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLibraryView.swift; sourceTree = "<group>"; };
 		F205BA7A28CA1C8D003D4C2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F205BA7D28CA1C8D003D4C2E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F205BA8328CA1C8D003D4C2E /* MyPersonalLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyPersonalLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +54,15 @@
 		F205BA8D28CA1C8D003D4C2E /* MyPersonalLibraryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyPersonalLibraryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F205BA9128CA1C8D003D4C2E /* MyPersonalLibraryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPersonalLibraryUITests.swift; sourceTree = "<group>"; };
 		F205BA9328CA1C8D003D4C2E /* MyPersonalLibraryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPersonalLibraryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F205BAA128CA1E5E003D4C2E /* LibraryFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryFeature.swift; sourceTree = "<group>"; };
+		F205BAA628CA1EE4003D4C2E /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		F205BAA928CA21C3003D4C2E /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		F205BAAB28CA228C003D4C2E /* SystemEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemEnvironment.swift; sourceTree = "<group>"; };
+		F205BAAD28CA3473003D4C2E /* LibraryEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryEffects.swift; sourceTree = "<group>"; };
+		F212E88228D34CBA0051E0C8 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		F212E88428D34CE10051E0C8 /* RootFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootFeature.swift; sourceTree = "<group>"; };
+		F212E88828D367A50051E0C8 /* Bookshelf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookshelf.swift; sourceTree = "<group>"; };
+		F212E88A28D367C80051E0C8 /* OpenLibrarySearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenLibrarySearchResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F205BAA528CA1EA4003D4C2E /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +114,10 @@
 		F205BA7528CA1C8B003D4C2E /* MyPersonalLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				F212E88128D34CAA0051E0C8 /* Root */,
+				F205BAA828CA21B8003D4C2E /* Shared */,
+				F205BAA028CA1E4A003D4C2E /* Library */,
 				F205BA7628CA1C8B003D4C2E /* MyPersonalLibraryApp.swift */,
-				F205BA7828CA1C8B003D4C2E /* ContentView.swift */,
 				F205BA7A28CA1C8D003D4C2E /* Assets.xcassets */,
 				F205BA7C28CA1C8D003D4C2E /* Preview Content */,
 			);
@@ -127,6 +149,45 @@
 			path = MyPersonalLibraryUITests;
 			sourceTree = "<group>";
 		};
+		F205BAA028CA1E4A003D4C2E /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				F212E88628D3677F0051E0C8 /* Models */,
+				F205BA7828CA1C8B003D4C2E /* MyLibraryView.swift */,
+				F205BAA128CA1E5E003D4C2E /* LibraryFeature.swift */,
+				F205BAAD28CA3473003D4C2E /* LibraryEffects.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		F205BAA828CA21B8003D4C2E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F205BAA928CA21C3003D4C2E /* APIError.swift */,
+				F205BAAB28CA228C003D4C2E /* SystemEnvironment.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		F212E88128D34CAA0051E0C8 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				F212E88228D34CBA0051E0C8 /* RootView.swift */,
+				F212E88428D34CE10051E0C8 /* RootFeature.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		F212E88628D3677F0051E0C8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F205BAA628CA1EE4003D4C2E /* Book.swift */,
+				F212E88828D367A50051E0C8 /* Bookshelf.swift */,
+				F212E88A28D367C80051E0C8 /* OpenLibrarySearchResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +204,9 @@
 			dependencies = (
 			);
 			name = MyPersonalLibrary;
+			packageProductDependencies = (
+				F205BAA428CA1EA4003D4C2E /* ComposableArchitecture */,
+			);
 			productName = MyPersonalLibrary;
 			productReference = F205BA7328CA1C8B003D4C2E /* MyPersonalLibrary.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +279,9 @@
 				Base,
 			);
 			mainGroup = F205BA6A28CA1C8B003D4C2E;
+			packageReferences = (
+				F205BAA328CA1EA4003D4C2E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = F205BA7428CA1C8B003D4C2E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,7 +324,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F205BA7928CA1C8B003D4C2E /* ContentView.swift in Sources */,
+				F212E88328D34CBA0051E0C8 /* RootView.swift in Sources */,
+				F205BAA728CA1EE4003D4C2E /* Book.swift in Sources */,
+				F205BAA228CA1E5E003D4C2E /* LibraryFeature.swift in Sources */,
+				F212E88928D367A50051E0C8 /* Bookshelf.swift in Sources */,
+				F205BAAE28CA3473003D4C2E /* LibraryEffects.swift in Sources */,
+				F212E88528D34CE10051E0C8 /* RootFeature.swift in Sources */,
+				F212E88B28D367C80051E0C8 /* OpenLibrarySearchResult.swift in Sources */,
+				F205BAAC28CA228C003D4C2E /* SystemEnvironment.swift in Sources */,
+				F205BA7928CA1C8B003D4C2E /* MyLibraryView.swift in Sources */,
+				F205BAAA28CA21C3003D4C2E /* APIError.swift in Sources */,
 				F205BA7728CA1C8B003D4C2E /* MyPersonalLibraryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -577,6 +653,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F205BAA328CA1EA4003D4C2E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F205BAA428CA1EA4003D4C2E /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F205BAA328CA1EA4003D4C2E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F205BA6B28CA1C8B003D4C2E /* Project object */;
 }
